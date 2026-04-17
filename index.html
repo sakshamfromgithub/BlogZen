@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogzen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar injected by app.js -->
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <main class="main-content">
+            <!-- Search & Filter -->
+            <div style="margin-bottom: 20px; display: flex; gap: 10px;">
+                <input type="text" id="search-input" placeholder="Search posts..." style="margin:0; max-width: 70%;">
+                <select id="category-filter" style="margin:0; max-width: 30%;">
+                    <option value="">All Categories</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="News">News</option>
+                </select>
+            </div>
+            <div id="posts-container">
+                <!-- Posts loaded here -->
+            </div>
+            <button id="load-more-btn" class="hidden" style="width: 100%; margin-top: 10px;">Load More</button>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <ul id="recent-posts" style="list-style: none; margin-top: 10px;"></ul>
+            </div>
+            <div class="ad-placeholder">AdSense Code Here</div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>BlogZen</h2>
+                <p>Sharing knowledge, ideas & tutorials for students and developers.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow</h3>
+                <div class="social-icons">
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 BlogZen. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
