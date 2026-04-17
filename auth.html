@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth - BlogZen</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-container {
+            position: relative;
+        }
+
+        #close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auth-container">
+        <!-- Close Button -->
+        <button id="close-btn">&times;</button>
+
+        <h2 id="auth-title">Login</h2>
+        <div id="auth-message" style="margin-bottom: 15px; color: var(--primary);"></div>
+
+        <div id="auth-forms">
+            <!-- Name field (Hidden by default for Login) -->
+            <input type="text" id="auth-name" placeholder="Full Name" class="hidden">
+            <input type="email" id="auth-email" placeholder="Email">
+            <input type="password" id="auth-password" placeholder="Password">
+            <button id="auth-submit-btn" style="width: 100%;">Login</button>
+            <p style="margin: 15px 0;">OR</p>
+            <button id="google-auth-btn" class="secondary" style="width: 100%;">Continue with Google</button>
+            <p style="margin-top: 15px; font-size: 0.9rem;">
+                <span id="auth-toggle-text">Don't have an account? </span>
+                <a href="#" id="auth-toggle-link">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
