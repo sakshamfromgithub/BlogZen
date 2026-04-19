@@ -112,6 +112,7 @@ nav {
   margin-bottom: 20px;
   border: 1px solid var(--border);
   transition: transform 0.2s;
+  cursor:pointer;
 }
 .post-card:hover {
   transform: translateY(-3px);
