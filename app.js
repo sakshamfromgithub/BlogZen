@@ -172,14 +172,14 @@ async function loadPosts() {
   let q = query(
     collection(db, "posts"),
     orderBy("createdAt", "desc"),
-    limit(5),
+    limit(15),
   );
   if (lastVisiblePost)
     q = query(
       collection(db, "posts"),
       orderBy("createdAt", "desc"),
       startAfter(lastVisiblePost),
-      limit(5),
+      limit(15),
     );
 
   const snapshot = await getDocs(q);
