@@ -179,7 +179,7 @@ async function loadPosts() {
       collection(db, "posts"),
       orderBy("createdAt", "desc"),
       startAfter(lastVisiblePost),
-      limit(15),
+      limit(5),
     );
 
   const snapshot = await getDocs(q);
