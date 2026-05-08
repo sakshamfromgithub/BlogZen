@@ -172,7 +172,7 @@ textarea {
 
 /* Specifics */
 .hidden {
-  display: none;
+  display: none !important;
 }
 .ad-placeholder {
   background: var(--bg-secondary);
